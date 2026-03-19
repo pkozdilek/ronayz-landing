@@ -9,13 +9,13 @@
 
 :root {
   --primary: #1D7378;
-  --secondary: #2A9D8F;
-  --accent: #264653;
-  --dark: #1A1A2E;
+  --secondary: #2A8E89;
+  --accent: #145558;
+  --dark: #0F3D3E;
   --light: #EDF6F5;
   --white: #ffffff;
-  --shadow: 0 4px 20px rgba(26, 26, 46, 0.08);
-  --shadow-hover: 0 8px 30px rgba(26, 26, 46, 0.15);
+  --shadow: 0 4px 20px rgba(15, 61, 62, 0.08);
+  --shadow-hover: 0 8px 30px rgba(15, 61, 62, 0.15);
   --radius: 12px;
   --transition: 0.3s ease;
 }
@@ -66,7 +66,7 @@ img {
 .header.scrolled {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
-  box-shadow: 0 2px 20px rgba(26, 26, 46, 0.08);
+  box-shadow: 0 2px 20px rgba(15, 61, 62, 0.08);
 }
 
 .header .container {
@@ -170,7 +170,7 @@ img {
 
 .hero-content p {
   font-size: 1.15rem;
-  color: #4a6670;
+  color: #919393;
   margin-bottom: 32px;
   max-width: 500px;
   line-height: 1.7;
@@ -203,79 +203,68 @@ img {
 
 .hero-shape {
   position: absolute;
-  border-radius: 50%;
   opacity: 0.6;
 }
 
+.hero-shape svg {
+  width: 100%;
+  height: 100%;
+}
+
 .hero-shape-1 {
-  width: 300px;
-  height: 300px;
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  width: 280px;
+  height: 220px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0.15;
-  animation: float 6s ease-in-out infinite;
+  opacity: 0.18;
+  animation: float-center 6s ease-in-out infinite;
 }
 
 .hero-shape-2 {
-  width: 200px;
-  height: 200px;
-  background: linear-gradient(135deg, var(--accent), var(--primary));
-  top: 20%;
-  right: 10%;
-  opacity: 0.12;
-  animation: float 8s ease-in-out infinite reverse;
+  width: 160px;
+  height: 180px;
+  top: 10%;
+  right: 8%;
+  opacity: 0.15;
+  animation: float-normal 8s ease-in-out infinite reverse;
 }
 
 .hero-shape-3 {
-  width: 150px;
-  height: 150px;
-  background: linear-gradient(135deg, var(--secondary), var(--accent));
-  bottom: 15%;
-  left: 15%;
-  opacity: 0.1;
-  animation: float 7s ease-in-out infinite 1s;
+  width: 100px;
+  height: 100px;
+  bottom: 12%;
+  left: 12%;
+  opacity: 0.2;
+  animation: float-normal 7s ease-in-out infinite 1s;
 }
 
 .hero-shape-4 {
-  width: 80px;
-  height: 80px;
-  border: 3px solid var(--primary);
-  background: transparent;
-  top: 15%;
-  left: 30%;
-  opacity: 0.25;
-  border-radius: 12px;
-  transform: rotate(45deg);
-  animation: spin 12s linear infinite;
+  width: 90px;
+  height: 110px;
+  top: 12%;
+  left: 28%;
+  opacity: 0.15;
+  animation: float-normal 9s ease-in-out infinite 0.5s;
 }
 
 .hero-shape-5 {
-  width: 60px;
-  height: 60px;
-  border: 3px solid var(--secondary);
-  background: transparent;
-  bottom: 25%;
-  right: 20%;
-  opacity: 0.2;
-  border-radius: 50%;
-  animation: pulse 4s ease-in-out infinite;
+  width: 100px;
+  height: 80px;
+  bottom: 20%;
+  right: 18%;
+  opacity: 0.18;
+  animation: float-normal 6.5s ease-in-out infinite 1.5s;
 }
 
-@keyframes float {
+@keyframes float-center {
   0%, 100% { transform: translate(-50%, -50%) translateY(0); }
-  50% { transform: translate(-50%, -50%) translateY(-20px); }
+  50% { transform: translate(-50%, -50%) translateY(-15px); }
 }
 
-@keyframes spin {
-  from { transform: rotate(45deg); }
-  to { transform: rotate(405deg); }
-}
-
-@keyframes pulse {
-  0%, 100% { transform: scale(1); opacity: 0.2; }
-  50% { transform: scale(1.2); opacity: 0.35; }
+@keyframes float-normal {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
 }
 
 /* ===== Section Common ===== */
@@ -294,7 +283,7 @@ img {
 .section-subtitle {
   text-align: center;
   font-size: 1.05rem;
-  color: #4a6670;
+  color: #919393;
   max-width: 550px;
   margin: 0 auto 60px;
 }
@@ -354,7 +343,7 @@ img {
 
 .feature-card p {
   font-size: 0.92rem;
-  color: #5a7a85;
+  color: #919393;
   line-height: 1.6;
 }
 
@@ -412,7 +401,7 @@ img {
 
 .step p {
   font-size: 0.95rem;
-  color: #5a7a85;
+  color: #919393;
   max-width: 260px;
   margin: 0 auto;
 }
