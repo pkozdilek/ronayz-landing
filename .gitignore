@@ -1,0 +1,24 @@
+# Geliştirme + IDE
+.claude/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Playwright / test çıktıları
+.playwright-mcp/
+*.test.png
+test-results/
+
+# Kaynak / örnek içerikler (gizlilik içerir, repoya gitmemeli)
+ekran görüntüleri/
+ronayz_index_yeni.html
+
+# Geliştirme sırasında alınan ekran görüntüleri (repoya gerek yok)
+[0-9][0-9]-*.png
+v[0-9]-*.png
+
+# Yerel ortam dosyaları
+.env
+.env.local
+node_modules/
