@@ -22,3 +22,11 @@ v[0-9]-*.png
 .env
 .env.local
 node_modules/
+
+.vercel
+
+# Sunum çıktıları (presentation/generate.js ile yeniden üretilir)
+*.pptx
+
+# Lokal önizleme/staging dosyaları (proda atılmaz)
+preview/
