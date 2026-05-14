@@ -30,3 +30,9 @@ node_modules/
 
 # Lokal önizleme/staging dosyaları (proda atılmaz)
 preview/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
